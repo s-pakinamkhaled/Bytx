@@ -649,8 +649,8 @@ export default function App() {
               </h2>
             </div>
             <p className="quiet">
-              BYTX is a senior-led digital agency founded on one belief: the strongest work happens when
-              strategy, craft, and technology share the same table.
+              BYTX is an independent digital engineering studio founded on one belief: the strongest work
+              happens when strategy, craft, and technology share the same table.
             </p>
           </div>
         </section>
@@ -918,14 +918,14 @@ export default function App() {
         <div className="wrap footer-inner">
           <Logo className="logo footer-logo" />
           <div className="socials">
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-            <a href="https://www.behance.net/" target="_blank" rel="noreferrer">
-              Behance
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/bytx.tech" target="_blank" rel="noreferrer">
               Instagram
+            </a>
+            <a href="https://www.tiktok.com/@bytx.tech" target="_blank" rel="noreferrer">
+              TikTok
+            </a>
+            <a href="https://www.facebook.com/share/19jGWsjVvi/" target="_blank" rel="noreferrer">
+              Facebook
             </a>
           </div>
           <p className="copy">© {new Date().getFullYear()} BYTX Studio</p>
