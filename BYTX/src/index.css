@@ -650,6 +650,10 @@ fieldset {
   transition: transform 0.25s ease;
 }
 
+#work > .wrap {
+  width: min(1320px, calc(100% - var(--gutter) * 2));
+}
+
 .work-showcase {
   display: flex;
   flex-direction: column;
@@ -705,9 +709,9 @@ fieldset {
 
 .work-panel {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(250px, 0.7fr);
-  gap: 28px;
-  align-items: center;
+  grid-template-columns: minmax(0, 65fr) minmax(240px, 35fr);
+  gap: clamp(24px, 3vw, 40px);
+  align-items: start;
   animation: panel-in 0.45s var(--ease);
 }
 
@@ -715,11 +719,12 @@ fieldset {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
   overflow: hidden;
   border: 1px solid rgba(145, 173, 179, 0.28);
   border-radius: var(--radius);
   background: #061825;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.32);
   min-height: 0;
 }
 
@@ -728,7 +733,7 @@ fieldset {
   flex: none;
   align-items: center;
   gap: 7px;
-  height: 40px;
+  height: 42px;
   padding: 0 14px;
   background: rgba(8, 31, 51, 0.92);
   border-bottom: 1px solid rgba(145, 173, 179, 0.12);
@@ -765,15 +770,18 @@ fieldset {
 
 .work-visual {
   position: relative;
-  flex: none;
-  aspect-ratio: 16 / 10;
+  display: grid;
+  width: 100%;
   background: #04111a;
 }
 
 .work-visual img {
+  grid-area: 1 / 1;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
   object-position: top center;
   animation: frame-in 0.5s ease;
 }
@@ -781,7 +789,7 @@ fieldset {
 .work-progress {
   position: absolute;
   z-index: 2;
-  top: 40px;
+  top: 42px;
   left: 0;
   right: 0;
   height: 2px;
@@ -836,8 +844,10 @@ fieldset {
   flex-direction: column;
   justify-content: center;
   gap: 16px;
-  padding: 8px 4px 8px 8px;
-  min-height: 0;
+  padding: 4px 0 4px 4px;
+  min-width: 0;
+  position: sticky;
+  top: calc(var(--header) + 24px);
 }
 
 .work-meta {
@@ -1419,7 +1429,6 @@ section,
     grid-row: 1;
   }
 
-  .work-panel,
   .about-grid,
   .brief-intro,
   .why-grid {
@@ -1427,12 +1436,8 @@ section,
   }
 
   .work-panel {
+    grid-template-columns: minmax(0, 62fr) minmax(220px, 38fr);
     gap: 22px;
-    align-items: stretch;
-  }
-
-  .work-detail {
-    padding: 0;
   }
 
   .section-aside {
@@ -1554,6 +1559,16 @@ section,
 
   .section {
     padding: 76px 0;
+  }
+
+  .work-panel {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .work-detail {
+    position: static;
+    padding: 0;
   }
 
   .work-tabs {
