@@ -79,21 +79,55 @@ const SERVICES = [
 
 const PROJECTS = [
   {
-    name: 'EduKids',
-    type: 'Learning platform',
-    category: 'Education',
-    tech: ['React', 'Vite', 'Bilingual UX'],
-    url: 'https://edu-kids-gamma.vercel.app/',
-    host: 'edu-kids-gamma.vercel.app',
+    name: 'OFFSURGE',
+    type: 'Fashion house',
+    category: 'Retail',
+    tech: ['React', 'Campaign UX', 'Ecommerce'],
+    url: 'https://www.offsurge.com/',
+    host: 'www.offsurge.com',
     summary:
-      'A playful learning site for letters, numbers, colors, and animals. Children can look, listen, and explore in English and Arabic.',
+      'A fashion house for women, men, and pets. The campaign, the product, and the bag stay in one black-and-white system.',
     frames: [
-      { src: edukidsHome, label: 'Home' },
-      { src: edukidsExplore, label: 'Explore' },
-      { src: edukidsFriends, label: 'Friends' },
-      { src: edukidsLetters, label: 'Letters' },
-      { src: edukidsAnimals, label: 'Animals' },
-      { src: edukidsParents, label: 'Parents' },
+      { src: offsurgeHome, label: 'Home' },
+      { src: offsurgeCampaign, label: 'Campaign' },
+      { src: offsurgeProduct, label: 'Product' },
+      { src: offsurgeDetail, label: 'Detail' },
+      { src: offsurgeBag, label: 'Bag' },
+      { src: offsurgeFooter, label: 'Footer' },
+    ],
+  },
+  {
+    name: 'LINEA',
+    type: 'Fashion ecommerce',
+    category: 'Retail',
+    tech: ['React', 'Product UX', 'Commerce'],
+    url: 'https://linea-fashion.vercel.app/',
+    host: 'linea-fashion.vercel.app',
+    summary:
+      'A fashion shop for tops, jackets, dresses, and pants. The collection, the filters, and the product page stay in one quiet cream system.',
+    frames: [
+      { src: lineaHome, label: 'Home' },
+      { src: lineaShop, label: 'Shop' },
+      { src: lineaCategories, label: 'Categories' },
+      { src: lineaDresses, label: 'Dresses' },
+      { src: lineaProduct, label: 'Product' },
+    ],
+  },
+  {
+    name: 'Qahwa',
+    type: 'Café website',
+    category: 'Hospitality',
+    tech: ['React', 'Booking UX', 'Brand system'],
+    url: 'https://qahwa-seven-mu.vercel.app/',
+    host: 'qahwa-seven-mu.vercel.app',
+    summary:
+      'A café site with the pace of a slow morning. The menu, the story, and the visit share one warm system, and booking a table stays inside the page.',
+    frames: [
+      { src: qahwaHome, label: 'Home' },
+      { src: qahwaMenu, label: 'Menu' },
+      { src: qahwaStory, label: 'Story' },
+      { src: qahwaVisit, label: 'Visit' },
+      { src: qahwaBooking, label: 'Booking' },
     ],
   },
   {
@@ -115,20 +149,21 @@ const PROJECTS = [
     ],
   },
   {
-    name: 'Qahwa',
-    type: 'Café website',
-    category: 'Hospitality',
-    tech: ['React', 'Booking UX', 'Brand system'],
-    url: 'https://qahwa-seven-mu.vercel.app/',
-    host: 'qahwa-seven-mu.vercel.app',
+    name: 'EduKids',
+    type: 'Learning platform',
+    category: 'Education',
+    tech: ['React', 'Vite', 'Bilingual UX'],
+    url: 'https://edu-kids-gamma.vercel.app/',
+    host: 'edu-kids-gamma.vercel.app',
     summary:
-      'A café site with the pace of a slow morning. The menu, the story, and the visit share one warm system, and booking a table stays inside the page.',
+      'A playful learning site for letters, numbers, colors, and animals. Children can look, listen, and explore in English and Arabic.',
     frames: [
-      { src: qahwaHome, label: 'Home' },
-      { src: qahwaMenu, label: 'Menu' },
-      { src: qahwaStory, label: 'Story' },
-      { src: qahwaVisit, label: 'Visit' },
-      { src: qahwaBooking, label: 'Booking' },
+      { src: edukidsHome, label: 'Home' },
+      { src: edukidsExplore, label: 'Explore' },
+      { src: edukidsFriends, label: 'Friends' },
+      { src: edukidsLetters, label: 'Letters' },
+      { src: edukidsAnimals, label: 'Animals' },
+      { src: edukidsParents, label: 'Parents' },
     ],
   },
   {
@@ -146,41 +181,6 @@ const PROJECTS = [
       { src: youpropertyFeatured, label: 'Featured' },
       { src: youpropertyListing, label: 'Listing' },
       { src: youpropertyContact, label: 'Contact' },
-    ],
-  },
-  {
-    name: 'LINEA',
-    type: 'Fashion ecommerce',
-    category: 'Retail',
-    tech: ['React', 'Product UX', 'Commerce'],
-    url: 'https://linea-fashion.vercel.app/',
-    host: 'linea-fashion.vercel.app',
-    summary:
-      'A fashion shop for tops, jackets, dresses, and pants. The collection, the filters, and the product page stay in one quiet cream system.',
-    frames: [
-      { src: lineaHome, label: 'Home' },
-      { src: lineaShop, label: 'Shop' },
-      { src: lineaCategories, label: 'Categories' },
-      { src: lineaDresses, label: 'Dresses' },
-      { src: lineaProduct, label: 'Product' },
-    ],
-  },
-  {
-    name: 'OFFSURGE',
-    type: 'Fashion house',
-    category: 'Retail',
-    tech: ['React', 'Campaign UX', 'Ecommerce'],
-    url: 'https://www.offsurge.com/',
-    host: 'www.offsurge.com',
-    summary:
-      'A fashion house for women, men, and pets. The campaign, the product, and the bag stay in one black-and-white system.',
-    frames: [
-      { src: offsurgeHome, label: 'Home' },
-      { src: offsurgeCampaign, label: 'Campaign' },
-      { src: offsurgeProduct, label: 'Product' },
-      { src: offsurgeDetail, label: 'Detail' },
-      { src: offsurgeBag, label: 'Bag' },
-      { src: offsurgeFooter, label: 'Footer' },
     ],
   },
 ]
@@ -259,8 +259,12 @@ function useReveal() {
   }, [])
 }
 
-function WorkShowcase({ projects }) {
-  const [selected, setSelected] = useState(0)
+const DEFAULT_PROJECT = 'OFFSURGE'
+
+function WorkShowcase({ projects, defaultProject = DEFAULT_PROJECT }) {
+  const [selected, setSelected] = useState(() =>
+    Math.max(0, projects.findIndex((item) => item.name === defaultProject)),
+  )
   const [frame, setFrame] = useState(0)
   const [paused, setPaused] = useState(false)
   const [play, setPlay] = useState(0)
@@ -763,7 +767,7 @@ export default function App() {
             </div>
 
             {status === 'sent' ? (
-              <div className="sent" role="status">
+              <div id="brief" className="sent" role="status">
                 <Eyebrow>Brief received</Eyebrow>
                 <h3>We’ll read this carefully.</h3>
                 <p>
