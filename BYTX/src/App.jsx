@@ -47,32 +47,112 @@ const NAV = [
 const SERVICES = [
   {
     index: '01',
-    title: 'Brand systems',
-    need: 'Brand system',
-    copy: 'Strategy, identity, and flexible visual systems built to make ambitious brands unmistakable.',
+    title: 'Custom Software Development',
+    need: 'Custom software',
+    copy: 'Tailored platforms and internal tools engineered around how your business actually operates.',
   },
   {
     index: '02',
-    title: 'Digital products',
-    need: 'Digital product',
-    copy: 'High-performance websites and products where clear thinking meets exceptional interaction.',
+    title: 'Website Development',
+    need: 'Website',
+    copy: 'High-performance marketing and product sites with clear structure, strong craft, and measurable results.',
   },
   {
     index: '03',
-    title: 'Creative technology',
-    need: 'Creative technology',
-    copy: 'Motion, 3D, and emerging technology that turn digital touchpoints into memorable experiences.',
+    title: 'Mobile Applications',
+    need: 'Mobile app',
+    copy: 'Native-feeling apps for iOS and Android, designed for clarity, speed, and lasting engagement.',
+  },
+  {
+    index: '04',
+    title: 'SaaS Solutions',
+    need: 'SaaS solution',
+    copy: 'Scalable product architecture, billing-ready flows, and interfaces built for recurring use.',
+  },
+  {
+    index: '05',
+    title: 'Automation & Business Solutions',
+    need: 'Automation',
+    copy: 'Workflow automation and operational systems that remove friction and free your team to move faster.',
   },
 ]
 
-const WORK = [
+const PROJECTS = [
   {
-    title: 'Learning',
-    copy: 'From first letters to a full study week.',
-    projects: [
+    name: 'OFFSURGE',
+    type: 'Fashion house',
+    category: 'Retail',
+    tech: ['React', 'Campaign UX', 'Ecommerce'],
+    url: 'https://www.offsurge.com/',
+    host: 'www.offsurge.com',
+    summary:
+      'A fashion house for women, men, and pets. The campaign, the product, and the bag stay in one black-and-white system.',
+    frames: [
+      { src: offsurgeHome, label: 'Home' },
+      { src: offsurgeCampaign, label: 'Campaign' },
+      { src: offsurgeProduct, label: 'Product' },
+      { src: offsurgeDetail, label: 'Detail' },
+      { src: offsurgeBag, label: 'Bag' },
+      { src: offsurgeFooter, label: 'Footer' },
+    ],
+  },
+  {
+    name: 'LINEA',
+    type: 'Fashion ecommerce',
+    category: 'Retail',
+    tech: ['React', 'Product UX', 'Commerce'],
+    url: 'https://linea-fashion.vercel.app/',
+    host: 'linea-fashion.vercel.app',
+    summary:
+      'A fashion shop for tops, jackets, dresses, and pants. The collection, the filters, and the product page stay in one quiet cream system.',
+    frames: [
+      { src: lineaHome, label: 'Home' },
+      { src: lineaShop, label: 'Shop' },
+      { src: lineaCategories, label: 'Categories' },
+      { src: lineaDresses, label: 'Dresses' },
+      { src: lineaProduct, label: 'Product' },
+    ],
+  },
+  {
+    name: 'Qahwa',
+    type: 'Café website',
+    category: 'Hospitality',
+    tech: ['React', 'Booking UX', 'Brand system'],
+    url: 'https://qahwa-seven-mu.vercel.app/',
+    host: 'qahwa-seven-mu.vercel.app',
+    summary:
+      'A café site with the pace of a slow morning. The menu, the story, and the visit share one warm system, and booking a table stays inside the page.',
+    frames: [
+      { src: qahwaHome, label: 'Home' },
+      { src: qahwaMenu, label: 'Menu' },
+      { src: qahwaStory, label: 'Story' },
+      { src: qahwaVisit, label: 'Visit' },
+      { src: qahwaBooking, label: 'Booking' },
+    ],
+  },
+  {
+    name: 'UpGrade',
+    type: 'Study companion',
+    category: 'EdTech',
+    tech: ['React', 'Firebase', 'Dashboard'],
+    url: 'https://upgrade-e87b3.web.app/',
+    host: 'upgrade-e87b3.web.app',
+    summary:
+      'A study companion for courses, tasks, and deadlines. The dashboard, the plan, and the assistant stay in one dark system.',
+    frames: [
+      { src: upgradeSignin, label: 'Sign in' },
+      { src: upgradeDashboard, label: 'Dashboard' },
+      { src: upgradeAssistant, label: 'Assistant' },
+      { src: upgradePlan, label: 'Study plan' },
+      { src: upgradeGroup, label: 'Study group' },
+      { src: upgradeWarnings, label: 'Warnings' },
+    ],
+  },
   {
     name: 'EduKids',
-    type: 'Learning website',
+    type: 'Learning platform',
+    category: 'Education',
+    tech: ['React', 'Vite', 'Bilingual UX'],
     url: 'https://edu-kids-gamma.vercel.app/',
     host: 'edu-kids-gamma.vercel.app',
     summary:
@@ -87,45 +167,10 @@ const WORK = [
     ],
   },
   {
-    name: 'UpGrade',
-    type: 'Study app',
-    url: 'https://upgrade-e87b3.web.app/',
-    host: 'upgrade-e87b3.web.app',
-    summary:
-      'A study companion for courses, tasks, and deadlines. The dashboard, the plan, and the assistant stay in one dark system.',
-    frames: [
-      { src: upgradeSignin, label: 'Sign in' },
-      { src: upgradeDashboard, label: 'Dashboard' },
-      { src: upgradeAssistant, label: 'Assistant' },
-      { src: upgradePlan, label: 'Study plan' },
-      { src: upgradeGroup, label: 'Study group' },
-      { src: upgradeWarnings, label: 'Warnings' },
-    ],
-  },
-    ],
-  },
-  {
-    title: 'The city',
-    copy: 'Places people visit, book, and come back to.',
-    projects: [
-  {
-    name: 'Qahwa',
-    type: 'Café website',
-    url: 'https://qahwa-seven-mu.vercel.app/',
-    host: 'qahwa-seven-mu.vercel.app',
-    summary:
-      'A café site with the pace of a slow morning. The menu, the story, and the visit share one warm system, and booking a table stays inside the page.',
-    frames: [
-      { src: qahwaHome, label: 'Home' },
-      { src: qahwaMenu, label: 'Menu' },
-      { src: qahwaStory, label: 'Story' },
-      { src: qahwaVisit, label: 'Visit' },
-      { src: qahwaBooking, label: 'Booking' },
-    ],
-  },
-  {
     name: 'You Property',
-    type: 'Real estate website',
+    type: 'Real estate platform',
+    category: 'Real estate',
+    tech: ['React', 'Listings', 'Lead capture'],
     url: 'https://you-property.vercel.app/',
     host: 'you-property.vercel.app',
     summary:
@@ -136,45 +181,6 @@ const WORK = [
       { src: youpropertyFeatured, label: 'Featured' },
       { src: youpropertyListing, label: 'Listing' },
       { src: youpropertyContact, label: 'Contact' },
-    ],
-  },
-    ],
-  },
-  {
-    title: 'Fashion',
-    copy: 'A clear collection, and a quiet way to buy.',
-    projects: [
-  {
-    name: 'LINEA',
-    type: 'Fashion website',
-    url: 'https://linea-fashion.vercel.app/',
-    host: 'linea-fashion.vercel.app',
-    summary:
-      'A fashion shop for tops, jackets, dresses, and pants. The collection, the filters, and the product page stay in one quiet cream system.',
-    frames: [
-      { src: lineaHome, label: 'Home' },
-      { src: lineaShop, label: 'Shop' },
-      { src: lineaCategories, label: 'Categories' },
-      { src: lineaDresses, label: 'Dresses' },
-      { src: lineaProduct, label: 'Product' },
-    ],
-  },
-  {
-    name: 'OFFSURGE',
-    type: 'Fashion website',
-    url: 'https://www.offsurge.com/',
-    host: 'www.offsurge.com',
-    summary:
-      'A fashion house for women, men, and pets. The campaign, the product, and the bag stay in one black-and-white system.',
-    frames: [
-      { src: offsurgeHome, label: 'Home' },
-      { src: offsurgeCampaign, label: 'Campaign' },
-      { src: offsurgeProduct, label: 'Product' },
-      { src: offsurgeDetail, label: 'Detail' },
-      { src: offsurgeBag, label: 'Bag' },
-      { src: offsurgeFooter, label: 'Footer' },
-    ],
-  },
     ],
   },
 ]
@@ -188,7 +194,14 @@ const BUDGETS = [
   'Not sure yet',
 ]
 const TIMELINES = ['As soon as possible', '1–2 months', '3–6 months', 'Flexible']
-const NEEDS = ['Brand system', 'Website', 'Digital product', 'Mobile app', 'Creative technology', 'Not sure yet']
+const NEEDS = [
+  'Custom software',
+  'Website',
+  'Mobile app',
+  'SaaS solution',
+  'Automation',
+  'Not sure yet',
+]
 
 const EMPTY = {
   name: '',
@@ -220,103 +233,155 @@ function Arrow() {
   )
 }
 
-function WorkShowcase({ project }) {
-  const count = project.frames.length
-  const [active, setActive] = useState(0)
+function useReveal() {
+  useEffect(() => {
+    const nodes = document.querySelectorAll('.reveal')
+    if (!nodes.length) return undefined
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      nodes.forEach((node) => node.classList.add('is-visible'))
+      return undefined
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return
+          entry.target.classList.add('is-visible')
+          observer.unobserve(entry.target)
+        })
+      },
+      { threshold: 0.14, rootMargin: '0px 0px -6% 0px' },
+    )
+
+    nodes.forEach((node) => observer.observe(node))
+    return () => observer.disconnect()
+  }, [])
+}
+
+const DEFAULT_PROJECT = 'OFFSURGE'
+
+function WorkShowcase({ projects, defaultProject = DEFAULT_PROJECT }) {
+  const [selected, setSelected] = useState(() =>
+    Math.max(0, projects.findIndex((item) => item.name === defaultProject)),
+  )
+  const [frame, setFrame] = useState(0)
   const [paused, setPaused] = useState(false)
   const [play, setPlay] = useState(0)
-  const stripRef = useRef(null)
-  const frame = project.frames[active]
+  const [fadeKey, setFadeKey] = useState(0)
+  const tabsRef = useRef(null)
+  const project = projects[selected]
+  const count = project.frames.length
+  const activeFrame = project.frames[frame]
 
   useEffect(() => {
-    const strip = stripRef.current
+    const strip = tabsRef.current
     const tab = strip?.querySelector('[aria-selected="true"]')
     if (!strip || !tab || strip.scrollWidth <= strip.clientWidth) return
     strip.scrollTo({
       left: tab.offsetLeft - (strip.clientWidth - tab.clientWidth) / 2,
       behavior: 'smooth',
     })
-  }, [active])
+  }, [selected])
 
   useEffect(() => {
     if (paused) return undefined
     const media = window.matchMedia('(prefers-reduced-motion: reduce)')
     if (media.matches) return undefined
     const timer = window.setTimeout(() => {
-      setActive((current) => (current + 1) % count)
-    }, 5200)
+      setFrame((current) => (current + 1) % count)
+    }, 4800)
     return () => window.clearTimeout(timer)
-  }, [active, paused, count, play])
+  }, [frame, paused, count, play, selected])
 
-  function step(direction) {
-    setActive((current) => (current + direction + count) % count)
+  function selectProject(index) {
+    if (index === selected) return
+    setSelected(index)
+    setFrame(0)
+    setFadeKey((key) => key + 1)
   }
 
   return (
-    <article className="case">
-      <div className="case-lead">
-        <p>{project.summary}</p>
-        <a className="case-visit" href={project.url} target="_blank" rel="noreferrer">
-          Visit the site
-          <Arrow />
-        </a>
-      </div>
-      <div
-        className={`case-stage${paused ? ' is-paused' : ''}`}
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => {
-          setPaused(false)
-          setPlay((current) => current + 1)
-        }}
-      >
-        <div className="case-chrome" aria-hidden="true">
-          <span />
-          <span />
-          <span />
-          <p>{project.host}</p>
-        </div>
-        <div className="case-pan">
-          <img key={frame.label} src={frame.src} alt={`${project.name} — ${frame.label}`} />
-        </div>
-        <p className="case-chip">
-          {String(active + 1).padStart(2, '0')} — {frame.label}
-        </p>
-        <button type="button" className="case-arrow is-prev" onClick={() => step(-1)} aria-label="Previous screen">
-          <Arrow />
-        </button>
-        <button type="button" className="case-arrow is-next" onClick={() => step(1)} aria-label="Next screen">
-          <Arrow />
-        </button>
-        <div className="case-progress" aria-hidden="true">
-          <span key={`${active}-${play}`} />
-        </div>
-      </div>
-
-      <div
-        className="case-frames"
-        ref={stripRef}
-        role="tablist"
-        aria-label={`${project.name} screens`}
-        style={{ '--frames': String(project.frames.length) }}
-      >
-        {project.frames.map((item, index) => (
+    <div className="work-showcase">
+      <div className="work-tabs" ref={tabsRef} role="tablist" aria-label="Selected projects">
+        {projects.map((item, index) => (
           <button
-            key={item.label}
+            key={item.name}
             type="button"
             role="tab"
-            aria-selected={index === active}
-            className={index === active ? 'is-on' : undefined}
-            onClick={() => setActive(index)}
+            id={`work-tab-${index}`}
+            aria-selected={index === selected}
+            aria-controls="work-panel"
+            className={index === selected ? 'is-on' : undefined}
+            onClick={() => selectProject(index)}
           >
-            <img src={item.src} alt="" />
-            <span>
-              {String(index + 1).padStart(2, '0')}
-              <em>{item.label}</em>
-            </span>
+            {item.name}
           </button>
         ))}
       </div>
-    </article>
+
+      <div
+        className="work-panel"
+        id="work-panel"
+        role="tabpanel"
+        aria-labelledby={`work-tab-${selected}`}
+        key={fadeKey}
+      >
+        <div
+          className={`work-stage${paused ? ' is-paused' : ''}`}
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => {
+            setPaused(false)
+            setPlay((current) => current + 1)
+          }}
+        >
+          <div className="work-chrome" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+            <p>{project.host}</p>
+          </div>
+          <div className="work-visual">
+            <img key={`${project.name}-${activeFrame.label}`} src={activeFrame.src} alt={`${project.name} — ${activeFrame.label}`} />
+          </div>
+          <div className="work-progress" aria-hidden="true">
+            <span key={`${selected}-${frame}-${play}`} />
+          </div>
+          <div className="work-dots" role="group" aria-label={`${project.name} screens`}>
+            {project.frames.map((item, index) => (
+              <button
+                key={item.label}
+                type="button"
+                className={index === frame ? 'is-on' : undefined}
+                aria-label={`Show ${item.label}`}
+                aria-pressed={index === frame}
+                onClick={() => setFrame(index)}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="work-detail">
+          <div className="work-meta">
+            <p className="work-category">{project.category}</p>
+            <p className="work-type">{project.type}</p>
+          </div>
+          <h3>{project.name}</h3>
+          <p className="work-summary">{project.summary}</p>
+          <ul className="tech-list">
+            {project.tech.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          {project.url ? (
+            <a className="btn btn-primary" href={project.url} target="_blank" rel="noreferrer">
+              View project
+              <Arrow />
+            </a>
+          ) : null}
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -362,6 +427,8 @@ export default function App() {
   const [form, setForm] = useState(EMPTY)
   const [errors, setErrors] = useState({})
   const [status, setStatus] = useState('idle')
+
+  useReveal()
 
   useEffect(() => {
     const ids = NAV.map((item) => item.id)
@@ -523,6 +590,9 @@ export default function App() {
                 {item.label}
               </a>
             ))}
+            <button type="button" className="nav-cta" onClick={() => openBrief()}>
+              Start a project
+            </button>
           </nav>
         </div>
       </header>
@@ -540,17 +610,21 @@ export default function App() {
             </svg>
           </div>
           <div className="hero-body">
-            <Eyebrow>Independent digital agency · Cairo / Worldwide</Eyebrow>
+            <p className="hero-brand">BYTX</p>
             <h1>
-              We engineer
+              The Art of
               <br />
-              <span className="outline">digital impact.</span>
+              <span className="outline">Digital Engineering.</span>
             </h1>
-            <div className="hero-foot">
-              <p className="lede">
-                Strategy, design, and technology for brands ready to move the world forward.
-              </p>
-              <a className="text-link" href="#work">
+            <p className="lede">
+              Strategy, design, and technology for brands ready to move the world forward.
+            </p>
+            <div className="hero-actions">
+              <button type="button" className="btn btn-primary" onClick={() => openBrief()}>
+                Start a project
+                <Arrow />
+              </button>
+              <a className="btn btn-ghost" href="#work">
                 Explore our work
                 <Arrow />
               </a>
@@ -571,7 +645,7 @@ export default function App() {
             <circle cx="300" cy="180" r="190" />
             <circle cx="300" cy="180" r="260" />
           </svg>
-          <div className="wrap">
+          <div className="wrap reveal">
             <Eyebrow>What we believe</Eyebrow>
             <h2>
               The best digital <span className="dim">experiences don’t just look</span> sharp. They connect{' '}
@@ -582,7 +656,7 @@ export default function App() {
 
         <section className="section" id="services">
           <div className="wrap">
-            <div className="section-head">
+            <div className="section-head reveal">
               <div>
                 <Eyebrow>Capabilities</Eyebrow>
                 <h2>Built for momentum.</h2>
@@ -593,11 +667,12 @@ export default function App() {
               </a>
             </div>
             <div className="service-list" id="service-list">
-              {SERVICES.map((service) => (
+              {SERVICES.map((service, index) => (
                 <button
                   key={service.index}
                   type="button"
-                  className="service"
+                  className="service reveal"
+                  style={{ '--delay': `${index * 60}ms` }}
                   onClick={() => openBrief(service.need)}
                 >
                   <span className="index">{service.index}</span>
@@ -612,34 +687,23 @@ export default function App() {
 
         <section className="section" id="work">
           <div className="wrap">
-            {WORK.map((group, groupIndex) => (
-              <div className="work-group" key={group.title}>
-                <div className="work-group-head">
-                  <div>
-                    {groupIndex === 0 && <Eyebrow>Selected work</Eyebrow>}
-                    <p className="work-kicker">
-                      <span>{String(groupIndex + 1).padStart(2, '0')}</span>
-                      {group.title}
-                    </p>
-                  </div>
-                  <p>{group.copy}</p>
-                </div>
-                {group.projects.map((project) => (
-                  <div className="work-block" key={project.name}>
-                    <div className="work-project">
-                      <h2>{project.name}.</h2>
-                      <p>{project.type}</p>
-                    </div>
-                    <WorkShowcase project={project} />
-                  </div>
-                ))}
+            <div className="section-head reveal">
+              <div>
+                <Eyebrow>Selected work</Eyebrow>
+                <h2>Proof in the product.</h2>
               </div>
-            ))}
+              <p className="section-aside">
+                Select a project to preview the build, stack, and live experience.
+              </p>
+            </div>
+            <div className="reveal">
+              <WorkShowcase projects={PROJECTS} />
+            </div>
           </div>
         </section>
 
         <section className="section about" id="about">
-          <div className="wrap about-grid">
+          <div className="wrap about-grid reveal">
             <div>
               <Eyebrow>About BYTX</Eyebrow>
               <h2>
@@ -667,7 +731,7 @@ export default function App() {
         </section>
 
         <section className="section why" id="why">
-          <div className="wrap why-grid">
+          <div className="wrap why-grid reveal">
             <Eyebrow>Why BYTX</Eyebrow>
             <div>
               <h2>
@@ -685,7 +749,7 @@ export default function App() {
 
         <section className="section contact" id="contact">
           <div className="wrap">
-            <div className="contact-hero">
+            <div className="contact-hero reveal">
               <div>
                 <Eyebrow>Start a conversation</Eyebrow>
                 <h2>
@@ -703,7 +767,7 @@ export default function App() {
             </div>
 
             {status === 'sent' ? (
-              <div className="sent" role="status">
+              <div id="brief" className="sent" role="status">
                 <Eyebrow>Brief received</Eyebrow>
                 <h3>We’ll read this carefully.</h3>
                 <p>
@@ -725,25 +789,25 @@ export default function App() {
             ) : (
               <form id="brief" className="brief" onSubmit={onSubmit} noValidate>
                 <div className="brief-card">
-                <div className="brief-intro">
-                  <div>
-                    <h3>Tell us the idea.</h3>
+                  <div className="brief-intro">
+                    <div>
+                      <h3>Tell us the idea.</h3>
+                    </div>
+                    <ol className="steps">
+                      <li>
+                        <span>01</span>
+                        Write the project and the budget you have in mind.
+                      </li>
+                      <li>
+                        <span>02</span>
+                        The brief arrives in the studio inbox.
+                      </li>
+                      <li>
+                        <span>03</span>
+                        We reply with a clear point of view.
+                      </li>
+                    </ol>
                   </div>
-                  <ol className="steps">
-                    <li>
-                      <span>01</span>
-                      Write the project and the budget you have in mind.
-                    </li>
-                    <li>
-                      <span>02</span>
-                      The brief arrives in the studio inbox.
-                    </li>
-                    <li>
-                      <span>03</span>
-                      We reply with a clear point of view.
-                    </li>
-                  </ol>
-                </div>
 
                   <div className={`field${errors.name ? ' has-error' : ''}`}>
                     <label htmlFor="field-name">Name</label>
@@ -916,7 +980,17 @@ export default function App() {
 
       <footer className="site-footer">
         <div className="wrap footer-inner">
-          <Logo className="logo footer-logo" />
+          <div className="footer-brand">
+            <Logo className="logo footer-logo" />
+            <p>The Art of Digital Engineering.</p>
+          </div>
+          <div className="footer-nav" aria-label="Footer">
+            {NAV.map((item) => (
+              <a key={item.id} href={`#${item.id}`}>
+                {item.label}
+              </a>
+            ))}
+          </div>
           <div className="socials">
             <a href="https://www.instagram.com/bytx.tech" target="_blank" rel="noreferrer">
               Instagram
